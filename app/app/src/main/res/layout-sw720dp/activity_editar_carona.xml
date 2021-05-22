@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.dragoonssoft.apps.caronacap.EditarCarona">
+    <include
+        android:id="@+id/editar_carona_app_bar"
+        layout="@layout/app_bar_layout" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/partidaLabelEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/partida"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_weight="0.40" />
+
+        <Spinner
+            android:id="@+id/partidaSpinnerEditar"
+            android:layout_width="216dp"
+            android:layout_height="25dp"
+            android:layout_weight="0.60"
+            android:animateLayoutChanges="true"
+            android:animationCache="false"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/destinoLabelEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/destino"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_weight="0.40" />
+
+        <Spinner
+            android:id="@+id/destinoSpinnerEditar"
+            android:layout_width="216dp"
+            android:layout_height="25dp"
+            android:layout_weight="0.60"
+            android:animateLayoutChanges="true"
+            android:animationCache="false"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/horarioEditar"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:text="@string/horario"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TimePicker
+            android:id="@+id/horarioParaOBPickerEditar"
+            style="@android:style/Widget.Material.TimePicker"
+            tools:targetApi="23"
+            android:layout_width="165dp"
+            android:layout_height="84dp"
+            android:layout_weight="0.6"
+            android:animateLayoutChanges="true"
+            android:animationCache="true"
+            android:timePickerMode="spinner" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/motoristaLabelEditar"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="Motorista"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="100">
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profileImageEditar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/motoristaNomeEditar"
+            android:layout_width="202dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Nome"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/caroneirosLabelEditar"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="Caroneiros"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/caroneiro1FotoEditar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/caroneiro1NomeEditar"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_weight="90"
+            android:gravity="center"
+            android:text="Caroneiro 1"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tirarCaroneiro1BtnEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="RESERVAR"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/msg1BtnEditar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="5"
+            android:background="@drawable/ic_send_msg" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/caroneiro2FotoEditar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/caroneiro2NomeEditar"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_weight="90"
+            android:gravity="center"
+            android:text="Caroneiro 2"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tirarCaroneiro2BtnEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="RESERVAR" />
+
+        <Button
+            android:id="@+id/msg2BtnEditar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="5"
+            android:background="@drawable/ic_send_msg" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/caroneiro3FotoEditar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/caroneiro3NomeEditar"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_weight="90"
+            android:gravity="center"
+            android:text="Caroneiro 3"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tirarCaroneiro3BtnEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="RESERVAR" />
+
+        <Button
+            android:id="@+id/msg3BtnEditar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="5"
+            android:background="@drawable/ic_send_msg" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/caroneiro4FotoEditar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/caroneiro4NomeEditar"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_weight="90"
+            android:gravity="center"
+            android:text="Caroneiro 4"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tirarCaroneiro4BtnEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/reservar" />
+
+        <Button
+            android:id="@+id/msg4BtnEditar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="5"
+            android:background="@drawable/ic_send_msg" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_weight="1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

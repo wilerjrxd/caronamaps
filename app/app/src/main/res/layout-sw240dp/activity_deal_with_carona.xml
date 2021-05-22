@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dragoonssoft.apps.caronacap.DealWithCarona">
+
+    <include
+        android:id="@+id/deal_with_carona_toolbar"
+        layout="@layout/app_bar_layout"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_above="@id/pedirCancelarSairCaronaBtn">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/partidaDestinoLabel"
+                android:layout_width="220dp"
+                android:layout_height="64dp"
+                android:layout_alignLeft="@+id/motoristaLabel"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/motoristaLabel"
+                android:text="CAP > Hortão"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/horario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/partidaDestinoLabel"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:text="12:30h"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/motoristaLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/horario"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="22dp"
+                android:text="Motorista"
+                android:textColor="@color/title_label_caronacap"
+                android:textSize="13sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profileImagePerfil"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/motoristaLabel"
+                android:layout_alignStart="@+id/motoristaLabel"
+                android:layout_below="@+id/motoristaLabel"
+                android:layout_marginTop="2dp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/motoristaNome"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/profileImagePerfil"
+                android:layout_marginLeft="4dp"
+                android:layout_toEndOf="@+id/profileImagePerfil"
+                android:layout_toRightOf="@+id/profileImagePerfil"
+                android:gravity="center"
+                android:text="Nome"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/carroNome"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/profileImagePerfil"
+                android:layout_marginLeft="4dp"
+                android:layout_toEndOf="@+id/motoristaNome"
+                android:layout_toRightOf="@+id/motoristaNome"
+                android:gravity="center"
+                android:text="Carro Azul"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/carroLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/carroNome"
+                android:layout_alignLeft="@+id/carroNome"
+                android:layout_alignStart="@+id/carroNome"
+                android:textAlignment="center"
+                android:layout_marginTop="16dp"
+                android:text="Carro"
+                android:textColor="@color/title_label_caronacap"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/caroneirosLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profileImagePerfil"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:text="Caroneiros"
+                android:textColor="@color/title_label_caronacap"
+                android:textSize="12sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/caroneiro1Foto"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/caroneirosLabel"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/caroneiro1Nome"
+                android:layout_width="150dp"
+                android:layout_height="44dp"
+                android:layout_alignLeft="@+id/caroneiro2Nome"
+                android:layout_alignStart="@+id/caroneiro2Nome"
+                android:layout_alignTop="@+id/caroneiro1Foto"
+                android:gravity="center"
+                android:text="Caroneiro 1"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/tirarCaroneiro1Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_alignBottom="@+id/caroneiro1Nome"
+                android:layout_marginLeft="4dp"
+                android:layout_toEndOf="@+id/caroneiro1Nome"
+                android:layout_toRightOf="@+id/caroneiro1Nome"
+                android:text="RESERVAR"
+                android:textColor="@android:color/black" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/caroneiro2Foto"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/caroneiro1Foto"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/caroneiro2Nome"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_alignBottom="@+id/caroneiro2Foto"
+                android:layout_marginLeft="4dp"
+                android:layout_toEndOf="@+id/caroneiro2Foto"
+                android:layout_toRightOf="@+id/caroneiro2Foto"
+                android:gravity="center"
+                android:text="Caroneiro 2"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/tirarCaroneiro2Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_alignBottom="@+id/caroneiro2Nome"
+                android:layout_marginLeft="4dp"
+                android:layout_toEndOf="@+id/caroneiro2Nome"
+                android:layout_toRightOf="@+id/caroneiro2Nome"
+                android:text="RESERVAR"
+                android:textColor="@android:color/black" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/caroneiro3Foto"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignLeft="@+id/caroneiro2Foto"
+                android:layout_alignStart="@+id/caroneiro2Foto"
+                android:layout_below="@+id/caroneiro2Foto"
+                android:layout_marginTop="2dp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/caroneiro3Nome"
+                android:layout_width="150dp"
+                android:layout_height="44dp"
+                android:layout_alignLeft="@+id/caroneiro4Nome"
+                android:layout_alignStart="@+id/caroneiro4Nome"
+                android:layout_alignTop="@+id/caroneiro3Foto"
+                android:gravity="center"
+                android:text="Caroneiro 3"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/tirarCaroneiro3Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_alignBottom="@+id/caroneiro3Nome"
+                android:layout_marginLeft="4dp"
+                android:layout_toEndOf="@+id/caroneiro3Nome"
+                android:layout_toRightOf="@+id/caroneiro3Nome"
+                android:text="RESERVAR"
+                android:textColor="@android:color/black" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/caroneiro4Foto"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/caroneiro3Foto"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/caroneiro4Nome"
+                android:layout_width="150dp"
+                android:layout_height="44dp"
+                android:layout_alignBottom="@+id/caroneiro4Foto"
+                android:layout_marginLeft="4dp"
+                android:layout_toEndOf="@+id/caroneiro4Foto"
+                android:layout_toRightOf="@+id/caroneiro4Foto"
+                android:gravity="center"
+                android:text="Caroneiro 4"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/tirarCaroneiro4Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_alignBottom="@+id/caroneiro4Nome"
+                android:layout_marginLeft="4dp"
+                android:layout_toEndOf="@+id/caroneiro4Nome"
+                android:layout_toRightOf="@+id/caroneiro4Nome"
+                android:text="RESERVAR"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/pedirCancelarSairCaronaBtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_button"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="@string/cancelar_carona"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

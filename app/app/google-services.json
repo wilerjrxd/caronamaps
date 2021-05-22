@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1083882324771",
+    "firebase_url": "https://caronacap-f80ea.firebaseio.com",
+    "project_id": "caronacap-f80ea",
+    "storage_bucket": "caronacap-f80ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083882324771:android:267e4d7f7a528973",
+        "android_client_info": {
+          "package_name": "com.dragoonssoft.apps.caronacap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083882324771-csb5tsvpp91uch1ndta3vns5i2a3cbkv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dragoonssoft.apps.caronacap",
+            "certificate_hash": "7736c053bdc3746b46a8fb3b553693922b398208"
+          }
+        },
+        {
+          "client_id": "1083882324771-180dus00kcn8fsrko0j1fj3rl73q78ii.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dragoonssoft.apps.caronacap",
+            "certificate_hash": "f9ee744c93c47f6fe41a0b82b129a2bd6eda7400"
+          }
+        },
+        {
+          "client_id": "1083882324771-jr3lppr9bijqgvhtduq7scgp6cpftjii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl6zC03kkcoBeOWisTNFEJ-x2WlmrgZgY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083882324771-jr3lppr9bijqgvhtduq7scgp6cpftjii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

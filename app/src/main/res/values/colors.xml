@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#186913</color>
+    <color name="colorAccent">#155f11</color>
+    <color name="activity_home">#000a81d0</color>
+
+    <color name="green_text_caronaCAP">#09812f</color>
+    <color name="title_label_caronacap">#62ac64</color>
+    <color name="criar_carona_text_caronacap">#38d133</color>
+    <color name="assento_vazio_color">#40ac3d</color>
+    <color name="vermelho">#FF4500</color>
+    <color name="cinza_claro">#ffc1c1c1</color>
+    <color name="green_translucent">#8562ac64</color>
+    <color name="darkslateblue">#4169E1</color>
+
+</resources>

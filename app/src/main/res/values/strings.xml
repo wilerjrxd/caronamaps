@@ -1,0 +1,314 @@
+﻿<resources>
+    <string name="app_name">caronaCAP</string>
+    <string name="activity_login">caronaCAP</string>
+    <string name="activity_cadastro">Cadastro</string>
+    <string name="activity_config">Configurações</string>
+    <string name="activity_sobre">Sobre</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_criar_carona">Criar Carona</string>
+    <string name="title_activity_criar_carona_cap">Criar Carona - OB > CAP</string>
+    <string name="obcapTogOn"><b>OB > CAP</b></string>
+    <string name="capobTogOn"><b>CAP > OB</b></string>
+    <string name="obcapTogOff">OB > CAP</string>
+    <string name="capobTogOff">CAP > OB</string>
+    <string name="cancelar_carona"><b>CANCELAR CARONA</b></string>
+    <string name="pedir_carona"><b>PEDIR CARONA</b></string>
+    <string name="sair_carona"><b>SAIR DA CARONA</b></string>
+    <string name="cancelar_pedido"><b>CANCELAR PEDIDO</b></string>
+    <string name="banner_ad_unit_id">ca-app-pub-0497813622722706/3214544608</string>
+    <string name="facebook_app_id">1570540722969575</string>
+    <string name="fb_login_protocol_scheme">fb1570540722969575</string>
+    <string name="caronas_tab">Caronas</string>
+    <string name="msgs_tab">Chat</string>
+    <string name="pedidos_tab">Pedidos</string>
+    <string name="se_matricula_nao_existente">Depois de cadastrado, caso verifiquemos que o número de matrícula não corresponde a um número de matrícula da UFSJ, sua conta será excluída de nosso sistema.</string>
+    <string name="cap_ida"><font color='red'><b>CAP</b></font></string>
+    <string name="cap_volta"><font color='blue'><b>CAP</b></font></string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_home"><b>caronaCAP</b></string>
+
+    <string-array name="locais_partida_cap">
+        <item><font color='red'>CAP</font></item>
+        <item>Belo Horizonte/MG</item>
+        <item>Belvedere</item>
+        <item>Caixa Econômica</item>
+        <item>Caixas</item>
+        <item>Cônego</item>
+        <item>Congonhas</item>
+        <item>Conselheiro Lafaiete/MG</item>
+        <item>Dona Chica</item>
+        <item>FOB</item>
+        <item>Hora H</item>
+        <item>Hortão</item>
+        <item>Imperial</item>
+        <item>Inconfidentes</item>
+        <item>Ipatinga/MG</item>
+        <item>Ouro Branco/MG</item>
+        <item>Ouro Preto/MG</item>
+        <item>Padaria Diniz</item>
+        <item>Padaria Pandoro</item>
+        <item>Pç Santa Cruz</item>
+        <item>Policlínica</item>
+        <item>R. Aço Norte</item>
+        <item>R. Lafersa</item>
+        <item>Rotor</item>
+        <item>Santander</item>
+        <item>São Francisco</item>
+        <item>São João del-Rei/MG</item>
+    </string-array>
+
+    <string-array name="locais">
+        <item><font color='blue'><b>CAP</b></font></item>
+        <item>Belo Horizonte/MG</item>
+        <item>Belvedere</item>
+        <item>Caixa Econômica</item>
+        <item>Caixas</item>
+        <item>Cônego</item>
+        <item>Congonhas/MG</item>
+        <item>Conselheiro Lafaiete/MG</item>
+        <item>Dona Chica</item>
+        <item>FOB</item>
+        <item>Hora H</item>
+        <item>Hortão</item>
+        <item>Imperial</item>
+        <item>Inconfidentes</item>
+        <item>Ipatinga/MG</item>
+        <item>Ouro Branco/MG</item>
+        <item>Ouro Preto/MG</item>
+        <item>Padaria Diniz</item>
+        <item>Padaria Pandoro</item>
+        <item>Pç Santa Cruz</item>
+        <item>Policlínica</item>
+        <item>Primeiro de Maio</item>
+        <item>R. Aço Norte</item>
+        <item>R. Lafersa</item>
+        <item>Rotor</item>
+        <item>Santander</item>
+        <item>São Francisco</item>
+        <item>São João del-Rei/MG</item>
+    </string-array>
+
+    <string-array name="locais_cap">
+        <item><font color='red'><b>CAP</b></font></item>
+        <item>Belo Horizonte/MG</item>
+        <item>Belvedere</item>
+        <item>Caixa Econômica</item>
+        <item>Caixas</item>
+        <item>Cônego</item>
+        <item>Congonhas/MG</item>
+        <item>Conselheiro Lafaiete/MG</item>
+        <item>Dona Chica</item>
+        <item>FOB</item>
+        <item>Hora H</item>
+        <item>Hortão</item>
+        <item>Imperial</item>
+        <item>Inconfidentes</item>
+        <item>Ipatinga/MG</item>
+        <item>Ouro Branco/MG</item>
+        <item>Ouro Preto/MG</item>
+        <item>Padaria Diniz</item>
+        <item>Padaria Pandoro</item>
+        <item>Pç Santa Cruz</item>
+        <item>Policlínica</item>
+        <item>Primeiro de Maio</item>
+        <item>R. Aço Norte</item>
+        <item>Rotor</item>
+        <item>Santander</item>
+        <item>São Francisco</item>
+        <item>São João del-Rei/MG</item>
+    </string-array>
+
+    <string-array name="locais_paradas">
+        <item>-</item>
+        <item>Belo Horizonte/MG</item>
+        <item>Belvedere</item>
+        <item>Caixa Econômica</item>
+        <item>Caixas</item>
+        <item>CAP</item>
+        <item>Cônego</item>
+        <item>Congonhas/MG</item>
+        <item>Conselheiro Lafaiete/MG</item>
+        <item>Dona Chica</item>
+        <item>FOB</item>
+        <item>Hora H</item>
+        <item>Hortão</item>
+        <item>Imperial</item>
+        <item>Inconfidentes</item>
+        <item>Ipatinga/MG</item>
+        <item>Ouro Branco/MG</item>
+        <item>Ouro Preto/MG</item>
+        <item>Padaria Diniz</item>
+        <item>Padaria Pandoro</item>
+        <item>Pç Santa Cruz</item>
+        <item>Policlínica</item>
+        <item>Primeiro de Maio</item>
+        <item>R. Aço Norte</item>
+        <item>Rotor</item>
+        <item>Santander</item>
+        <item>São Francisco</item>
+        <item>São João del-Rei/MG</item>
+    </string-array>
+
+    <string-array name="locais_paradas_full">
+        <item>-</item>
+        <item>Belo Horizonte/MG</item>
+        <item>Belvedere</item>
+        <item>Caixa Econômica</item>
+        <item>Caixas</item>
+        <item>CAP</item>
+        <item>Cônego</item>
+        <item>Congonhas/MG</item>
+        <item>Conselheiro Lafaiete/MG</item>
+        <item>Dona Chica</item>
+        <item>FOB</item>
+        <item>Hora H</item>
+        <item>Hortão</item>
+        <item>Imperial</item>
+        <item>Inconfidentes</item>
+        <item>Ipatinga/MG</item>
+        <item>Ouro Branco/MG</item>
+        <item>Ouro Preto/MG</item>
+        <item>Padaria Diniz</item>
+        <item>Padaria Pandoro</item>
+        <item>Pç Santa Cruz</item>
+        <item>Policlínica</item>
+        <item>Primeiro de Maio</item>
+        <item>R. Aço Norte</item>
+        <item>Rotor</item>
+        <item>Santander</item>
+        <item>São Francisco</item>
+        <item>São João del-Rei/MG</item>
+    </string-array>
+
+    <string-array name="cap">
+        <item>CAP</item>
+    </string-array>
+
+    <string-array name="vagas">
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string name="title_activity_caronas">caronaCAP</string>
+    <string name="action_settings">Perfil</string>
+    <string name="action_about">Sobre</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home_tabbed">caronaCAP</string>
+    <string name="fornecimento_telefone">Ao se cadastrar, você concorda com nossa <u>Política de Privacidade</u>. Clique sobre este texto para lê-la.</string>
+    <string name="privacidade_underline">Política de Privacidade</string>
+    <string name="enviar_mensagem">ENVIAR MENSAGEM</string>
+    <string name="fazer_ligacao">FAZER LIGAÇÃO</string>
+    <string name="finalizar_cadastro">Finalize seu cadastro, Dragoons Soft.</string>
+    <string name="destino">Destino</string>
+    <string name="partida">Partida</string>
+    <string name="liberar">LIBERAR</string>
+    <string name="reservar">RESERVAR</string>
+    <string name="propor_locais">Deseja sugerir outros locais de partida e destino? Clique <u>aqui</u> e envie-nos uma mensagem com a sua sugestão.</string>
+    <string name="criar">CRIAR</string>
+    <string name="vagas">Vagas</string>
+    <string name="horario">Horário</string>
+    <string name="partida_destino"><![CDATA[CAP > Hortão]]></string>
+    <string name="salvar">SALVAR</string>
+    <string name="versao">Versão 1.0.10</string>
+    <string name="privacidade">Política de Privacidade</string>
+    <string name="remover">REMOVER</string>
+    <string name="google_client_id">1083882324771-jr3lppr9bijqgvhtduq7scgp6cpftjii.apps.googleusercontent.com</string>
+    <string name="carro">Carro</string>
+    <string name="parada">Parada</string>
+    <string name="creditos">© 2017 Dragoons Soft</string>
+    <string name="sugestoes"><u>Sugestões</u></string>
+    <string name="ver_carona">VER CARONA</string>
+    <string name="criar_carona">CRIAR CARONA</string>
+    <string name="preferencias">Preferências</string>
+    <string name="preferencias_1">Prefer... ☺</string>
+    <string name="chat_1">Chat ☺</string>
+    <string name="chat">Chat</string>
+    <string name="pedidos_1">Pedidos ☺</string>
+    <string name="pedidos">Pedidos</string>
+    <string name="nenhum">Nenhum</string>
+    <string name="nenhum_pedido">Nenhum pedido de carona</string>
+    <string name="preferencias_text">Seus pontos preferidos</string>
+    <string name="nenhuma_preferencia">Nenhum ponto preferido. Clique para adicionar.</string>
+    <string name="toque_para_editar">Toque para editar</string>
+    <string name="toque_para_mudar_seus_pontos_de_carona_preferidos">Toque para mudar seus pontos de carona preferidos</string>
+    <string name="selecione_seus_pontos_de_carona_preferidos">Pontos preferidos</string>
+    <string name="nenhuma_carona_preferida">Nenhuma carona preferida disponível</string>
+    <string name="receber_notificacoes_pref">Receber notificações quando forem oferecidas caronas com meus pontos preferidos</string>
+    <string name="title_activity_test_maps">Map</string>
+</resources>

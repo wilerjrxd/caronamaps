@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_text_caronaCAP">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/perfil_toolbar" />
+
+    <ImageView
+        android:id="@+id/profileImagePerfil"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/perfil_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/nomePerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileImagePerfil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="caronaCAP"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/enviarMsgPerfilBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomePerfil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ripple_button_msg"
+        android:text="@string/enviar_mensagem"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" android:visibility="gone" />
+
+    <Button
+        android:id="@+id/fazerLigacaoPerfilBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enviarMsgPerfilBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ripple_button_ligacao"
+        android:text="@string/fazer_ligacao"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/telefonePerfilText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fazerLigacaoPerfilBtn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="46dp"
+        android:text="Telefone: 03131988776655"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/mudarNumBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/telefonePerfilText"
+        android:layout_alignTop="@+id/telefonePerfilText"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/telefonePerfilText"
+        android:layout_toRightOf="@+id/telefonePerfilText"
+        android:text="Mudar"
+        android:textSize="18sp" android:visibility="gone" />
+
+    <Switch
+        android:id="@+id/permitirSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/receberLigacoesText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:checked="true"
+        android:layout_alignBottom="@+id/receberLigacoesText" android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/receberLigacoesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/telefonePerfilText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="36dp"
+        android:text="Receber ligações iniciadas através do aplicativo"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_translucent"
+    tools:context="com.dragoonssoft.apps.caronacap.MudarTelefone">
+
+    <include
+        android:id="@+id/mudar_telefone_toolbar"
+        layout="@layout/app_bar_layout"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/telefone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mudar_telefone_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:paddingEnd="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingStart="2dp">
+
+        <EditText
+            android:id="@+id/telefoneText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Núm. de Telefone - Ex.: 31988776655"
+            android:inputType="phone"
+            android:maxLength="15"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/salvarTelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/telefone"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/salvar" />
+
+</RelativeLayout>

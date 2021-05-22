@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/perfil_toolbar" />
+
+    <!--de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profileImagePerfil"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/perfil_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp" /-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/profileCardView"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                app:cardCornerRadius="8dp"
+                android:elevation="10dp">
+
+                <ImageView
+                    android:id="@+id/profileImagePerfil"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/nomePerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profileCardView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="caronaCAP"
+                android:textColor="@android:color/black"
+                android:textSize="28sp" />
+
+            <!--TextView
+                android:id="@+id/reputacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nomePerfil"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="5,0"
+                android:textColor="@android:color/black"
+                android:textSize="40sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reputacao"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:id="@+id/qtdAvaliacoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingBar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:text="10 pessoas avaliaram"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/avaliadoPorMim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/qtdAvaliacoes"
+                android:layout_marginTop="16dp"
+                android:text="Avaliado por você em 10/08/2017"  android:visibility="gone"/>
+
+            <RatingBar
+                android:id="@+id/myRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/avaliadoPorMim"
+                android:layout_centerHorizontal="true"  android:visibility="gone"/-->
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:id="@+id/separator1"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@id/nomePerfil"
+                android:layout_marginTop="26dp"
+                android:layout_centerHorizontal="true"  android:visibility="gone">
+            </View>
+
+            <Button
+                android:id="@+id/enviarMsgPerfilBtn"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/fazerLigacaoPerfilBtn"
+                android:layout_alignStart="@+id/fazerLigacaoPerfilBtn"
+                android:layout_below="@+id/separator1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/ripple_button_msg"
+                android:text="@string/enviar_mensagem"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"  android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/fazerLigacaoPerfilBtn"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/enviarMsgPerfilBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/ripple_button_ligacao"
+                android:text="@string/fazer_ligacao"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"  android:visibility="gone"/>
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:id="@+id/separator2"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@id/fazerLigacaoPerfilBtn"
+                android:layout_marginTop="26dp"
+                android:layout_centerHorizontal="true"  android:visibility="gone">
+            </View>
+
+            <TextView
+                android:id="@+id/telefonePerfilText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/separator2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="26dp"
+                android:text="Telefone: 03131988776655"
+                android:textSize="20sp"  android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/mudarNumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Mudar"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_alignBaseline="@+id/telefonePerfilText"
+                android:layout_alignBottom="@+id/telefonePerfilText"
+                android:layout_toRightOf="@+id/telefonePerfilText"
+                android:layout_toEndOf="@+id/telefonePerfilText" android:visibility="gone"/>
+
+            <Switch
+                android:id="@+id/permitirSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/receberLigacoesText"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:checked="true"
+                android:layout_alignBottom="@+id/receberLigacoesText" android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/receberLigacoesText"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/telefonePerfilText"
+                android:layout_alignStart="@+id/telefonePerfilText"
+                android:layout_below="@+id/mudarNumBtn"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp"
+                android:text="Receber ligações iniciadas através do aplicativo"
+                android:textSize="18sp"  android:visibility="gone"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

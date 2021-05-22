@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.dragoonssoft.apps.caronacap.CriarEditarCaronaFragmento">
+
+    <include
+        android:id="@+id/criar_carona_app_bar"
+        layout="@layout/app_bar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/partidaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:text="@string/partida"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/partidaSpinner"
+            android:layout_width="216dp"
+            android:layout_height="48dp"
+            android:layout_weight="0.60"
+            android:animateLayoutChanges="true"
+            android:animationCache="false"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/parada1Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:text="@string/parada"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/parada1Spinner"
+            android:layout_width="216dp"
+            android:layout_height="25dp"
+            android:layout_weight="0.60"
+            android:animateLayoutChanges="true"
+            android:animationCache="false"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/parada2Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:text="@string/parada"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/parada2Spinner"
+            android:layout_width="216dp"
+            android:layout_height="25dp"
+            android:layout_weight="0.60"
+            android:animateLayoutChanges="true"
+            android:animationCache="false"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/destinoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:text="@string/destino"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/destinoSpinner"
+            android:layout_width="216dp"
+            android:layout_height="48dp"
+            android:layout_weight="0.60"
+            android:animateLayoutChanges="true"
+            android:animationCache="false"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/horario"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:text="@string/horario"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TimePicker
+            android:id="@+id/horarioParaOBPicker"
+            style="@android:style/Widget.Material.TimePicker"
+            android:layout_width="165dp"
+            android:layout_height="90dp"
+            android:layout_weight="0.6"
+            android:animateLayoutChanges="true"
+            android:animationCache="true"
+            android:timePickerMode="spinner"
+            tools:targetApi="21" />
+
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/vagasBar"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.09"
+            android:text="@string/vagas"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/vagasOBSpinner"
+            android:layout_width="96dp"
+            android:layout_height="64dp"
+            android:animateLayoutChanges="true"
+            android:animationCache="false"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/carro"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:text="@string/carro"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/carroText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Modelo e cor do seu carro"
+            android:inputType="textCapWords"/>
+
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/criarCaronaParaOBBtn"
+        android:layout_width="320dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:background="@color/criar_carona_text_caronacap"
+        android:text="@string/criar"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/enviarProposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/propor_locais"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+</LinearLayout>
