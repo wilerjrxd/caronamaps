@@ -1,4 +1,4 @@
 # caronamaps
-caronaCAP com GoogleMaps
+caronaCAP with GoogleMaps | Still in development
 
 An architectureless project
